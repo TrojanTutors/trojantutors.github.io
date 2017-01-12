@@ -1,0 +1,166 @@
+/* HERO */
+#hero {
+  background: url(../img/tommy.jpg);
+  background-position: center;
+  height: 500px;
+
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.35);
+}
+
+#hero .row {
+  text-align: center;
+  color: #fff;
+}
+
+#hero .text {
+  margin-top: 140px;
+  padding: 0px 25px;
+  padding-bottom: 15px;
+
+  display: inline-block;
+
+  background-color: rgba(0,0,0,0.5);
+
+  border-radius: 5px;
+}
+
+#hero .text h1 {
+  font-size: 58px;
+}
+
+#hero .btn {
+  margin-top: 20px;
+  background-color: #900;
+  border-color: #900;
+  color: #fff;
+  border: 1px solid #900;
+  box-shadow: 3px 2px 7px 0px rgba(0,0,0,0.35);
+
+  font-size: 20px;
+  padding: 12px 30px;
+
+  transition: all 500ms;
+}
+
+#hero .btn:hover {
+  box-shadow: 1px 1px 7px 3px rgba(0,0,0,0.35);
+}
+
+/* CLASSES */
+
+#classes {
+  padding: 20px 30px;
+  padding-bottom: 50px;
+}
+
+#classes h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+#classes .left {
+  text-align: right;
+}
+
+#classes .class {
+  display: inline-block;
+  margin: 4px 0px;
+
+  border: 1px solid transparent;
+  border-radius: 5px;
+
+  transition: all 300ms;
+
+  overflow: hidden;
+}
+
+#classes .class:hover {
+  border: 1px solid #990000;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+}
+
+#classes .class.selected {
+  border: 1px solid #990000;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+#classes .class h3 {
+  margin: 10px 15px 10px 15px;
+}
+
+#classes .class .specifics {
+  width: 115%;
+  /*position: relative;*/
+  left: -15%;
+}
+
+.spec {
+  /*display: none;*/
+  height: 0;
+  width: 0;
+}
+
+.spec ul {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+
+  padding: 10px 25px 0px 25px;
+}
+
+.spec li {
+  font-size: 18px;
+  line-height: 2em;
+}
+
+/* FORM */
+
+#form {
+  text-align: center;
+
+  background-color: #990000;
+}
+
+#form iframe {
+  display: none;
+}
+
+#form .btn {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  background-color: #fc0;
+  border-color: #fc0;
+  color: #222;
+  border: 1px solid #fc0;
+  box-shadow: 3px 2px 7px 0px rgba(0,0,0,0.35);
+
+  font-size: 20px;
+  padding: 12px 30px;
+
+  transition: all 350ms;
+}
+
+#form .btn:hover {
+  box-shadow: 1px 1px 9px 5px rgba(0,0,0,0.35);
+}
+
+/* BIOS */
+
+#bios {
+  padding: 55px 8%;
+}
+
+#bios .col-md-3 {
+  text-align: center;
+}
+
+#bios img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 100%;
+
+  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.35);
+}
