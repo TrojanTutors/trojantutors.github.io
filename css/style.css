@@ -24,6 +24,12 @@
   border-radius: 5px;
 }
 
+@media (max-width: 990px) {
+  #hero .text {
+    margin-top: 100px;
+  }
+}
+
 #hero .text h1 {
   font-size: 58px;
 }
@@ -61,6 +67,16 @@
 
 #classes .left {
   text-align: right;
+}
+
+@media (max-width: 990px) {
+  #classes {
+    text-align: center;
+  }
+
+  #classes .left {
+    text-align: center;
+  }
 }
 
 #classes .class {
