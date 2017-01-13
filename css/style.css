@@ -166,17 +166,145 @@
 /* BIOS */
 
 #bios {
-  padding: 55px 8%;
+  padding: 5px 8%;
 }
 
 #bios .col-md-3 {
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 55px;
+}
+
+#bios h3 {
+  margin-bottom: 15px;
+}
+
+#bios h4 {
+  margin-top: 15px;
 }
 
 #bios img {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /*margin-top: 10px;*/
+  /*margin-bottom: 10px;*/
   border-radius: 100%;
 
   box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.35);
+
+  transition: opacity 500ms;
+}
+
+#bios .about {
+  position: relative;
+  display: inline-block;
+
+  cursor: pointer;
+}
+
+#bios .about + h4 {
+  transition: all 350ms;
+  transition-delay: 450ms;
+}
+
+#bios .about:after {
+  content: "";
+  position: absolute;
+  background-color: #fc0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  /*box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.35);*/
+
+  transition: opacity 500ms, border-radius 800ms;
+}
+
+#bios .about.red:after {
+  background-color: #900;
+}
+
+#bios .about span {
+  position: absolute;
+  z-index: 100;
+  top: 42%;
+  left: 0;
+  right: 0;
+
+  color: #222;
+  font-size: 28px;
+  font-weight: 500;
+
+  opacity: 0;
+
+  transition: all 500ms;
+}
+
+#bios .about.red span {
+  color: #fff;
+}
+
+#bios .about .text {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 350ms;
+
+  text-align: left;
+  font-size: 16px;
+
+  padding: 10px 10px 10px 15px;
+}
+
+#bios .about.red .text {
+  color: #fff;
+}
+
+#bios .about:hover:after {
+  opacity: 0.65;
+}
+
+#bios .about.red:hover:after {
+  opacity: 0.8;
+}
+
+#bios .about:hover span {
+  opacity: 1;
+}
+
+#bios .about.selected {
+  /*width: 100%;*/
+}
+
+#bios .about.selected::after {
+  border-radius: 0;
+  opacity: 0.65;
+  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.35);
+}
+
+#bios .about.red.selected::after {
+  opacity: 0.8;
+}
+
+#bios .about.selected img {
+  opacity: 0;
+}
+
+#bios .about.selected span {
+  opacity: 0;
+}
+
+#bios .about.selected .text {
+  opacity: 1;
+
+  transition: opacity 350ms;
+  transition-delay: 500ms;
+}
+
+#bios .about.selected + h4 {
+  transition: all 100ms;
+  transition-delay: 0ms;
+
+  opacity: 0;
 }
